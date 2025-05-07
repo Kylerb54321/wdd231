@@ -177,7 +177,7 @@ main {
   margin-top: -10px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   #menuToggle {
     display: block;
     position: absolute;
