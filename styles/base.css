@@ -12,6 +12,7 @@ body {
   padding: 20px;
   background-color: #1C2833;
   color: white;
+  position: relative;
 }
 
 .profile-header {
@@ -176,7 +177,7 @@ main {
   margin-top: -10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   #menuToggle {
     display: block;
     position: absolute;
