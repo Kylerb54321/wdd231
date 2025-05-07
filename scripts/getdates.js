@@ -31,10 +31,18 @@ const courses = [
     displayCourses(filter);
   }
   
-  document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
-    displayCourses();
-  });
+
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("menuToggle");
+    const nav = document.querySelector(".top-nav ul");
+  
+    toggleBtn.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+  
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  });
   
