@@ -1,0 +1,138 @@
+/* ==== Reset/Normalize Overrides ==== */
+body, h1, h2, h3, p, ul, li, a, img, section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ==== General Styles ==== */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* ==== Header and Nav ==== */
+  header {
+    background-color: #1e2a38;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #0f1924;
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    background-color: #2a3c4e;
+    border-radius: 5px;
+  }
+  
+  /* ==== Main Content ==== */
+  main {
+    padding: 2rem;
+  }
+  
+  .view-toggle {
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+  
+  .view-toggle button {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #0f1924;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .view-toggle button:hover {
+    background-color: #2a3c4e;
+  }
+  
+  /* ==== Directory Grid View ==== */
+  #member-directory.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* ==== Directory List View ==== */
+  #member-directory.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #member-directory section {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  #member-directory img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ==== Footer ==== */
+  footer {
+    background-color: #1e2a38;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* ==== Responsive Navigation ==== */
+  #menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    #main-nav {
+      display: none;
+      flex-direction: column;
+    }
+  
+    #main-nav.open {
+      display: flex;
+    }
+  
+    #menu-toggle {
+      display: block;
+    }
+  }
+  

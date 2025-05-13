@@ -1,0 +1,84 @@
+{
+    "members": [
+      {
+        "name": "Alpha Tech Solutions",
+        "address": "123 Tech Drive",
+        "phone": "555-1234",
+        "website": "https://alphatech.com",
+        "image": "alpha-logo.png",
+        "membership": 3
+      },
+      {
+        "name": "Beta Bakery",
+        "address": "456 Sweet St",
+        "phone": "555-5678",
+        "website": "https://betabakery.com",
+        "image": "beta-logo.png",
+        "membership": 1
+      },
+      {
+        "name": "Gamma Greenhouse",
+        "address": "789 Garden Ave",
+        "phone": "555-8765",
+        "website": "https://gammagreenhouse.com",
+        "image": "gamma-logo.png",
+        "membership": 2
+      },
+      {
+        "name": "Delta Designs",
+        "address": "321 Art St",
+        "phone": "555-4321",
+        "website": "https://deltadesigns.com",
+        "image": "delta-logo.png",
+        "membership": 3
+      },
+      {
+        "name": "Epsilon Electronics",
+        "address": "654 Circuit Rd",
+        "phone": "555-6789",
+        "website": "https://epsilon.com",
+        "image": "epsilon-logo.png",
+        "membership": 1
+      },{
+            "name": "Gamma Greenhouse",
+            "address": "789 Garden Ave",
+            "phone": "555-8765",
+            "website": "https://gammagreenhouse.com",
+            "image": "gamma-logo.png",
+            "membership": 2
+        },
+        {
+            "name": "Delta Designs",
+            "address": "321 Art St",
+            "phone": "555-4321",
+            "website": "https://deltadesigns.com",
+            "image": "delta-logo.png",
+            "membership": 3
+        },
+        {
+            "name": "Epsilon Electronics",
+            "address": "654 Circuit Rd",
+            "phone": "555-6789",
+            "website": "https://epsilon.com",
+            "image": "epsilon-logo.png",
+            "membership": 1
+        },
+        {
+            "name": "Zeta Zoo",
+            "address": "987 Animal Way",
+            "phone": "555-3456",
+            "website": "https://zetazoo.com",
+            "image": "zeta-logo.png",
+            "membership": 2
+        },
+        {
+            "name": "Eta Events",
+            "address": "159 Event Blvd",
+            "phone": "555-2468",
+            "website": "https://etaevents.com",
+            "image": "eta-logo.png",
+            "membership": 3
+        }
+    ]
+  }
+  
