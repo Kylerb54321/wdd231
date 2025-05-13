@@ -5,7 +5,7 @@
         "address": "123 Tech Drive",
         "phone": "555-1234",
         "website": "https://alphatech.com",
-        "image": "alpha-logo.png",
+        "image": "AlphaTech.png",
         "membership": 3
       },
       {
@@ -13,7 +13,7 @@
         "address": "456 Sweet St",
         "phone": "555-5678",
         "website": "https://betabakery.com",
-        "image": "beta-logo.png",
+        "image": "BetaBakery.png",
         "membership": 1
       },
       {
@@ -21,7 +21,7 @@
         "address": "789 Garden Ave",
         "phone": "555-8765",
         "website": "https://gammagreenhouse.com",
-        "image": "gamma-logo.png",
+        "image": "GammaGreenhouse.png",
         "membership": 2
       },
       {
@@ -29,30 +29,30 @@
         "address": "321 Art St",
         "phone": "555-4321",
         "website": "https://deltadesigns.com",
-        "image": "delta-logo.png",
+        "image": "DeltaDesigns.png",
         "membership": 3
       },
       {
-        "name": "Epsilon Electronics",
+        "name": "JK Cleaning",
         "address": "654 Circuit Rd",
         "phone": "555-6789",
         "website": "https://epsilon.com",
-        "image": "epsilon-logo.png",
+        "image": "JKCleaning.png",
         "membership": 1
       },{
-            "name": "Gamma Greenhouse",
+            "name": "Joe's Bakery",
             "address": "789 Garden Ave",
             "phone": "555-8765",
             "website": "https://gammagreenhouse.com",
-            "image": "gamma-logo.png",
+            "image": "JoesBakery.png",
             "membership": 2
         },
         {
-            "name": "Delta Designs",
+            "name": "MK Movers",
             "address": "321 Art St",
             "phone": "555-4321",
             "website": "https://deltadesigns.com",
-            "image": "delta-logo.png",
+            "image": "MKMovers.png",
             "membership": 3
         },
         {
@@ -60,7 +60,7 @@
             "address": "654 Circuit Rd",
             "phone": "555-6789",
             "website": "https://epsilon.com",
-            "image": "epsilon-logo.png",
+            "image": "EpsilonElectronics.png",
             "membership": 1
         },
         {
@@ -68,7 +68,7 @@
             "address": "987 Animal Way",
             "phone": "555-3456",
             "website": "https://zetazoo.com",
-            "image": "zeta-logo.png",
+            "image": "ZetaZoo.png",
             "membership": 2
         },
         {
@@ -76,7 +76,7 @@
             "address": "159 Event Blvd",
             "phone": "555-2468",
             "website": "https://etaevents.com",
-            "image": "eta-logo.png",
+            "image": "EtaEvents.png",
             "membership": 3
         }
     ]
