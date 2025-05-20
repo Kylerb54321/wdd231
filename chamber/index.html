@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Business directory for Kyle Bailey" />
+  <meta name="description" content="home page for Kyle Bailey" />
   <meta name="author" content="Kyle Bailey" />
 
-  <title>Directory - Kyle Bailey</title>
+  <title>Directory home page - Kyle Bailey</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/chamber.css" />
-  <meta property="og:title" content="Directory - Kyle Bailey" />
-  <meta property="og:description" content="Find local businesses and members of our Chamber of Commerce." />
+  <link rel="stylesheet" href="css/home-large.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <meta property="og:title" content="index - Kyle Bailey" />
+  <meta property="og:description" content="chamber of commerce home page." />
   <meta property="og:image" content="images/social-share-image.png" />
-  <meta property="og:url" content="https://kylerb54321.github.io/wdd231/chamber/directory.html" />
+  <meta property="og:url" content="https://kylerb54321.github.io/wdd231/chamber/index.html" />
 </head>
 
 <body>
-  <header>
+  <header> 
     <h1>Kyle Bailey</h1>
     <nav>
       <button id="menu-toggle">☰</button>
       <ul id="main-nav">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="https://kylerb54321.github.io/wdd231chamber/directory.html">Directory</a></li>
+        <li><a href="https://kylerb54321.github.io/wdd231/chamber/directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -31,12 +31,42 @@
   </header>
 
   <main>
-    <h2>Member Directory</h2>
-    <div class="view-toggle">
-      <button id="grid-view">Grid View</button>
-      <button id="list-view">List View</button>
+    <section class="hero">
+      <div class="hero-container">
+        <img src="images/hero.webp" alt="man sitting at desk" class="hero-img">
+        <div class="hero-cta">
+          <h2>Are you a business owner and want to get more exposure?</h2>
+          <p>Contact us today and get the exposure you desire!</p>
+          <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+      </div>
+    </section>
+    <section class="events">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li><strong>May 25:</strong> Monthly Networking Mixer - 6 PM at City Hall</li>
+      <li><strong>June 5:</strong> Small Business Workshop - Online Webinar</li>
+      <li><strong>June 15:</strong> Community Clean-Up Day - Meet at Central Park</li>
+    </ul>
+  </section>
+  <section class="weather">
+    <h2>Loading weather...</h2>
+  </section>
+  <section class="spotlights">
+    <h2>Business Spotlights</h2>
+    <div class="spotlight-card">
+      <h3>Bailey's Outdoor Gear</h3>
+      <p>Your one-stop shop for all hiking, camping, and adventure gear.</p>
     </div>
-    <div id="member-directory" class="grid"></div>
+    <div class="spotlight-card">
+      <h3>TechNest Solutions</h3>
+      <p>Providing IT and cybersecurity services for local businesses.</p>
+    </div>
+    <div class="spotlight-card">
+      <h3>GreenLeaf Café</h3>
+      <p>Locally sourced food and organic coffee in a cozy setting.</p>
+    </div>
+  </section>
   </main>
 
   <footer>
@@ -45,6 +75,6 @@
     <p>Last Modified: <span id="last-modified"></span></p>
   </footer>
 
-  <script src="js/directory.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
