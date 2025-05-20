@@ -49,13 +49,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const spotlightContainer = document.querySelector('.spotlights');
   if (spotlightContainer) {
-    fetch('js/members.json')
+    fetch('data/members.json')
       .then(response => response.json())
       .then(data => {
         const members = data.members;
 
         const premiumMembers = members.filter(
-          member => member.membership === 1 || member.membership === 2
+          member => member.membership === 1 || member.membership === 2 || member.membership === 3
         );
 
         for (let i = premiumMembers.length - 1; i > 0; i--) {
@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         const selected = premiumMembers.slice(0, 3);
 
-        const membershipText = { 1: "Gold", 2: "Silver" };
+        const membershipText = { 1: "Gold", 2: "Silver", 3:"Bronze" };
 
         spotlightContainer.innerHTML = '<h2>Business Spotlights</h2>';
 
