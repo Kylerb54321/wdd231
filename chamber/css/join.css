@@ -1,0 +1,227 @@
+/* Reset and base styling */
+body, h1, h2, h3, p, ul, li, a, img, section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  color: #1e70bf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #1e2a38;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Navigation (optional if used) */
+nav {
+  background-color: #0f1924;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #2a3c4e;
+  border-radius: 5px;
+}
+
+/* Form and layout styling */
+main.form-layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+form {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin-top: 0.3rem;
+}
+
+input[type="submit"] {
+  background-color: #1e2a38;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2a3c4e;
+}
+
+/* Membership cards */
+.membership-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.membership-card {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.membership-card:nth-child(2) { animation-delay: 0.2s; }
+.membership-card:nth-child(3) { animation-delay: 0.4s; }
+.membership-card:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  main.form-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  form, .membership-cards {
+    flex: 1;
+  }
+
+  .membership-cards {
+    align-items: flex-start;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #1e2a38;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.thank-you {
+  text-align: center;
+  margin-top: 2rem;
+  display: block;
+  padding: 1rem;
+  color:#fff;
+  background-color: #2f3031;
+}
+
+/* Basic nav styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+#menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+@media (min-width: 760px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex !important;
+  }
+}
+
+
+
+

@@ -3,8 +3,13 @@ body, h1, h2, h3, p, ul, li, a, img, section {
     padding: 0;
     box-sizing: border-box;
   }
-  
- 
+
+  html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  }
+
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -202,4 +207,6 @@ body, h1, h2, h3, p, ul, li, a, img, section {
       display: block;
     }
   }
+
+
   

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the Chamber of Commerce - Membership Form" />
+  <meta name="author" content="Kyle Bailey" />
+  <title>Join the Chamber - Kyle Bailey</title>
+  <link rel="stylesheet" href="css/join.css" />
+  <link rel="stylesheet" href="css/chamber.css"
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce Membership</h1>
+    <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="form-layout">
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="firstName" required title="First Name" autocomplete="given-name">
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" name="lastName" required title="Last Name" autocomplete="family-name">
+      </label>
+
+      <label>
+        Organization Title:
+        <input type="text" name="orgTitle" title="Organization Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" required title="Email Address" autocomplete="email" placeholder="example@email.com">
+      </label>
+
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" required title="Mobile Phone" autocomplete="tel">
+      </label>
+
+      <label>
+        Business Name:
+        <input type="text" name="businessName" required title="Business Name" autocomplete="organization">
+      </label>
+
+      <label>
+        Membership Level:
+        <select name="membership" title="Membership Level">
+          <option value="np">NP Membership (Free)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Business Description:
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Submit Membership Application">
+    </form>
+
+    <div class="membership-cards">
+      <div class="membership-card">
+        <h3>NP Membership</h3>
+        <p>Perfect for non-profits, includes basic directory listing.</p>
+        <a href="#npModal">More Info</a>
+      </div>
+      <div class="membership-card">
+        <h3>Bronze Membership</h3>
+        <p>Includes directory listing and event invites.</p>
+        <a href="#bronzeModal">More Info</a>
+      </div>
+      <div class="membership-card">
+        <h3>Silver Membership</h3>
+        <p>Includes advertising and homepage spotlight.</p>
+        <a href="#silverModal">More Info</a>
+      </div>
+      <div class="membership-card">
+        <h3>Gold Membership</h3>
+        <p>All benefits including free event access and training.</p>
+        <a href="#goldModal">More Info</a>
+      </div>
+    </div>
+  </main>
+  <dialog id="npModal">
+    <h2>NP Membership Benefits</h2>
+    <p>Free listing, basic member support, and networking access.</p>
+    <button onclick="document.getElementById('npModal').close()">Close</button>
+  </dialog>
+  <dialog id="bronzeModal">
+    <h2>Bronze Membership Benefits</h2>
+    <p>All NP benefits + invites to special events and training access.</p>
+    <button onclick="document.getElementById('bronzeModal').close()">Close</button>
+  </dialog>
+  <dialog id="silverModal">
+    <h2>Silver Membership Benefits</h2>
+    <p>All Bronze benefits + advertising placement and spotlight position.</p>
+    <button onclick="document.getElementById('silverModal').close()">Close</button>
+  </dialog>
+  <dialog id="goldModal">
+    <h2>Gold Membership Benefits</h2>
+    <p>All Silver benefits + premium homepage features and discounts.</p>
+    <button onclick="document.getElementById('goldModal').close()">Close</button>
+  </dialog>
+  <footer>
+    <p>Contact: contact@yourchamber.org | (123) 456-7890</p>
+    <p>&copy; <span id="year"></span> Kyle Bailey | WDD 231</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+  <script src="js/join.js" defer></script>
+</body>
+</html>
