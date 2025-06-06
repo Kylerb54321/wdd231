@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Table Mountain",
+    "address": "Table Mountain National Park, Cape Town",
+    "description": "Iconic flat-topped mountain offering hiking, panoramic views, and a cableway ride to the summit.",
+    "image": "images/capetown.webp"
+  },
+  {
+    "name": "V&A Waterfront",
+    "address": "19 Dock Rd, Cape Town, 8001",
+    "description": "A bustling harbor with shops, restaurants, live entertainment, and the Two Oceans Aquarium.",
+    "image": "images/v&a waterfront.webp"
+  },
+  {
+    "name": "Bo-Kaap",
+    "address": "Bo-Kaap, Cape Town City Centre",
+    "description": "Historic area known for its brightly painted houses and Cape Malay culture and cuisine.",
+    "image": "images/bo-kaap.webp"
+  },
+  {
+    "name": "Kirstenbosch Botanical Gardens",
+    "address": "Rhodes Dr, Newlands, Cape Town",
+    "description": "Renowned botanical gardens nestled at the foot of Table Mountain with diverse plant life and trails.",
+    "image": "images/kirstenbosch.webp"
+  },
+  {
+    "name": "Cape Point",
+    "address": "Cape of Good Hope, Cape Peninsula",
+    "description": "Dramatic coastal cliffs and nature reserve with hiking paths, a lighthouse, and ocean views.",
+    "image": "images/capepoint.webp"
+  },
+  {
+    "name": "Robben Island",
+    "address": "Robben Island, Table Bay",
+    "description": "UNESCO World Heritage Site known as the prison location of Nelson Mandela. Accessible by ferry.",
+    "image": "images/robben-island.webp"
+  },
+  {
+    "name": "Muizenberg Beach",
+    "address": "Beach Rd, Muizenberg, Cape Town",
+    "description": "Popular surfing destination with colorful beach huts and gentle waves for beginners.",
+    "image": "images/muizenberg-beach.webp"
+  },
+  {
+    "name": "Boulders Beach",
+    "address": "Kleintuin Rd, Simon's Town",
+    "description": "Unique beach famous for its colony of African penguins and clear, sheltered waters.",
+    "image": "images/boulders-beach.webp"
+  }
+]
