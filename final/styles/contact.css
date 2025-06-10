@@ -115,3 +115,18 @@ footer {
   padding: 1rem;
   margin-top: 3rem;
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .info-section {
+    padding: 2rem 1rem;
+  }
+}
