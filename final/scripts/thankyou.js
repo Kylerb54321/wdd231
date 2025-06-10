@@ -1,15 +1,21 @@
-    const params = new URLSearchParams(window.location.search);
-    const firstName = params.get('fname') || '';
-    const lastName = params.get('lname') || '';
+export function displayThankYouMessage() {
+  try {
+    const data = JSON.parse(localStorage.getItem("userSubmission"));
 
-    const messageElem = document.getElementById('thankyou-message');
-    const followupElem = document.getElementById('followup-message');
-
-    if (firstName || lastName) {
-      messageElem.textContent = `Thank you, ${firstName} ${lastName}, for reaching out to Mad Rugby Skills Development Center. One of our consultants will contact you shortly to arrange a meeting and discuss your expectations and how we can assist you.`;
-    } else {
-      messageElem.textContent = `Thank you for reaching out to Mad Rugby Skills Development Center. One of our consultants will contact you shortly to arrange a meeting and discuss your expectations and how we can assist you.`;
+    if (!data || !data.firstName || !data.lastName) {
+      throw new Error("Incomplete user data.");
     }
 
-    followupElem.textContent = `We look forward to working with you to improve your game and help you achieve the goals you set out for yourself. We think that this partnership will be very beneficial for both you and our center.`;
-  
+    const message = `Thank you, ${data.firstName} ${data.lastName}, for reaching out to us.`;
+    const followup = `We look forward to working with you to improve your game and help you achieve the goals you set out for yourself. We think that this partnership will be very beneficial for both you and our center.`;
+
+    document.querySelector("#thankyou-message").textContent = message;
+    document.querySelector("#followup-message").textContent = followup;
+  } catch (err) {
+    console.error("Error displaying thank you message:", err);
+    document.querySelector("#thankyou-message").textContent = "Thank you for reaching out to us.";
+    document.querySelector("#followup-message").textContent = "We look forward to working with you.";
+  }
+}
+
+window.addEventListener("DOMContentLoaded", displayThankYouMessage);
