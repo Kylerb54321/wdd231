@@ -1,22 +1,9 @@
-export function handleFormSubmission() {
-  const form = document.querySelector("#contactForm");
+document.querySelector('#contactForm').addEventListener('submit', (e) => {
+  const fname = document.querySelector('#fname').value;
+  const lname = document.querySelector('#lname').value;
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault(); 
+  localStorage.setItem('fname', fname);
+  localStorage.setItem('lname', lname);
 
-    const formData = {
-      firstName: document.querySelector("#firstName").value.trim(),
-      lastName: document.querySelector("#lastName").value.trim(),
-      email: document.querySelector("#email").value.trim(),
-      position: document.querySelector("#position").value.trim(),
-      dob: document.querySelector("#dob").value,
-      lastTeam: document.querySelector("#lastTeam").value.trim(),
-    };
+});
 
-    localStorage.setItem("userSubmission", JSON.stringify(formData));
-
-    window.location.href = "thankyou.html";
-  });
-}
-
-window.addEventListener("DOMContentLoaded", handleFormSubmission);

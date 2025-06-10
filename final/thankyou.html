@@ -29,8 +29,20 @@
   <main class="thankyou-container">
     <h2>Thank You!</h2>
     <p id="thankyou-message"></p>
-    <p id="followup-message"></p>
   </main>
+  <script type="module">
+    const fname = localStorage.getItem('fname');
+    const lname = localStorage.getItem('lname');
+
+    if (fname && lname) {
+      document.getElementById('thankyou-message').textContent =
+        `Thank you, ${fname} ${lname}, for reaching out! One of our consultants will contact you soon to discuss your goals.`;
+      
+      const para = document.createElement('p');
+      para.textContent = "We look forward to working with you to improve your game and help you achieve the goals you set out for yourself. We think this partnership will be very beneficial for both you and our center.";
+      document.querySelector('main').appendChild(para);
+    }
+  </script>
 
   <footer>
     <p>&copy; 2025 Mad Rugby Skills Development Center. All rights reserved.</p>
