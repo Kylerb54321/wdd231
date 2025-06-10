@@ -3,27 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mad Rugby Skills Development Center</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta name="description" content="Final Project for Kyle Bailey" />
+  <meta name="author" content="Kyle Bailey" />
+  <title>Contact Us | Mad Rugby Skills</title>
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <meta property="og:title" content="index - Kyle Bailey" />
+  <meta property="og:description" content="Final Project contact page." />
+  <meta property="og:image" content="images/profile.webp" />
+  <meta property="og:url" content="https://kylerb54321.github.io/wdd231/final/contact.html" />
 </head>
 <body>
   <header>
-    <div class="logo">Mad Rugby Skills Development Center</div>
+    <h1>Mad Rugby Skills Development Center</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
+  <main class="contact-container">
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Phone:</strong> +27 12 345 6789</p>
+      <p><strong>Email:</strong> info@madrugbyskills.org</p>
+      <p><strong>Address:</strong> 11 Newton St, Newton, Wellington, Western Cape, South Africa, 7655</p>
+    </section>
 
-    <footer>
+    <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26565.0196822661!2d18.979539360654215!3d-33.666813573591405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1749554751291!5m2!1sen!2sza" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-form">
+      <h2>Join Our Program</h2>
+      <form action="thankyou.html" method="get">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="position">Preferred Position</label>
+        <input type="text" id="position" name="position">
+
+        <label for="lastteam">Last Team Played For</label>
+        <input type="text" id="lastteam" name="lastteam">
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
     <p>&copy; 2025 Mad Rugby Skills Development Center. All rights reserved.</p>
   </footer>
-
-  <script src="scripts/script.js" defer></script>
 </body>
 </html>
